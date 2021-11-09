@@ -80,7 +80,7 @@ services:
         - activemq
 
     transform-dte:
-        image: 550865318375.dkr.ecr.us-east-2.amazonaws.com/sca-transform-dte-engine:1.0.0
+        image: quay.io/alfresco/transform-dte-engine:1.0.0
         mem_limit: 2g
         environment:
             JAVA_OPTS: " -Xms256m -Xmx512m -DdteServerUrl=http://alfrescodte23.ddns.net:8080/transformation-server" 
